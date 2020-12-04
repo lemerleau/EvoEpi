@@ -18,14 +18,15 @@ The repo is organised as follows:
       - [analytic.py](src/analytic.py): set of python functions that implement all the analytical results in our paper. it is used in `analytical_seir.py`.
       - [main.py](src/main.py): which shows a simple running example how to use the `analytic.py`
             
-    - The branching process simulations `src/bp`:
-      - [branching.py](src/bp/branching.py)
-      - [survival_prob.py](src/bp/survival_prob.py)
+    - The branching process simulations in  [src/bp](src/bp):
+      - [branching.py](src/bp/branching.py):
+      - [survival_prob.py](src/bp/survival_prob.py):
       
-    - The SEIR model `src/seir`:
-       - [ppseir_basic.py](src/seir/ppseir_basic.py) : 
+    - The SEIR model in [src/seir](src/seir):
+    
+       - [ppseir_basic.py](src/seir/ppseir_basic.py): 
        - [ppseir_alternative.py](src/seir/ppseir_alternative.py): 
-       - [ppseir_analytical.py](scr/seir/ppseir_analytical.py)
+       - [ppseir_analytical.py](scr/seir/ppseir_analytical.py):
 
 # Requirements
 The following softwares are required:
