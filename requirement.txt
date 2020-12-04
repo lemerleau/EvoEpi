@@ -1,0 +1,6 @@
+numpy
+pandas
+scipy
+python-constraint
+multiprocess
+pp
