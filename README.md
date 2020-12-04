@@ -11,7 +11,7 @@ It provides an environment to simulate a simple branching process and SEIR epide
 The repo is organised as follows: 
 - [data](data/) which contains all the clean data used to produce the different plots presented in our paper.  The cleaned data are obtained by cleaning up the data generated from simulations. for more details please refer to the python notebook [here](data/clean_data.ipynb)
 - [images](images/) all the plots (in pdf) used in the paper and the Python notebook code is in: [src/notebooks/analytical.ipynb](src/notebooks/analytical.ipynb), [src/notebooks/bp.ipynb](src/notebooks/bp.ipynb) and [src/notebooks/seir.ipynb](src/notebooks/seir.ipynb)
-- [src](src/): it contains all the source codes (including the ones used to procuce the plots) and is organized in three main parts:
+- [src](src/): it contains all the source codes (including the ones used to produce the plots in the paper) and is organized in three main parts:
       
     - The analytical results in  [src/analytic](src/analytic):
     
@@ -50,20 +50,30 @@ The installation was tested on the following operating systems:
 * Debian Xfce 4.12 
 
 # How to run the simulation.
-
-
-to run it, simply type in the director `src/analytic`:
+First, please clone the git repo using the command: 
       
-      python main.py
+      $ git clone [repo link](#)
+      $ cd EviEpi
 
-- The branching process in `src/bp`:
+- Analytical result: For a simple example refer to the main file in [src/analytic](src/analytic/main.py):
+      
+      $ cd src/analytic 
+      $ python main.py
 
+- The branching process: please use the python file [src/bp/branching.py](src/bp/branching.py) and a short example in [main.py](src/bp/main.py)
+      
+      $ cd src/bp 
+      $ python main.py -T 100 -sd 0.9 -mBN 5 -u 0.1 --job 50 
+      
+  For more detail about the parameters please use: 
+      
+      $ python main.py --help
 
-- The epidemiological model in `src/seir`:
+- The epidemiological model:
 Here we have two alternatives of implementing the model we described in our paper: 
-    - The first one is the explained in the paper see (`src/seir/basic_seir.py`) : 
+    - The first one is tha basic one [src/seir/basic_seir.py](src/seir/basic_seir.py) : 
     
-   To run the basic SEIR simulation, please use the following command: 
+   To run the basic SEIR simulation, please use the following command in the directory [src/seir](src/seir/): 
    
       python `ppseir_basic.py` -Ir <infection rate> -Rr <recovey rate> -mu <mutation rate>
       
