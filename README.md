@@ -1,7 +1,7 @@
 # EvoEpi
 In this repository we provide the code and the minimum documentation that accompany our publication.
 It provides an environment to simulate a simple branching process and SEIR epidemiological model including inhost branching process with bottleneck.
-![](images/bp/bp_illustration2.png)
+![](images/bp/illustration.png)
 The repo is organised as follows: 
 - `data/` which contains all the clean data used to produce the different plots presented in our paper.  the clean data are obtained by cleaning up the data generated from simulations. for more details please refer to the python notebook `data/clean_data.ipynb`
 - `plots/` all the plot (in pdf) used in the paper and the Python notebook code is in `plots/bp_plot.ipynb` and `plots/seir_plot.ipynb`
