@@ -2,7 +2,7 @@
 (@Author: [Nono Saha Cyrille Merleau](#) and [Matteo Smerlak](#) )
 
 
-In this repository we provide the code and the minimum documentation that accompany our publication.
+In this repository, we provide the code and the minimum documentation that accompany our publication [1](#).
 It provides an environment to simulate a simple branching process and SEIR epidemiological model including inhost branching process with bottleneck.
 ![](images/bp/illustration.png)
 
