@@ -9,9 +9,10 @@ It provides an environment to simulate a simple branching process and SEIR epide
 ***Figure 1:** Illustration of the branching proccess for a fragile and robust population. While the robust population looses its wild-type strains by cumulating deleterious mutations, the fragile one preserves them.  At each bottleneck, a new population is sampled from the last one and it uses as initial population for a new braching process*
 
 The repo is organised as follows: 
-- [data](data/) which contains all the clean data used to produce the different plots presented in our paper.  The cleaned data are obtained by cleaning up the data generated from simulations. for more details please refer to the python notebook [here](data/clean_data.ipynb)
-- [images](images/) all the plots (in pdf) used in the paper and the Python notebook code is in: [src/notebooks/analytical.ipynb](src/notebooks/analytical.ipynb), [src/notebooks/bp.ipynb](src/notebooks/bp.ipynb) and [src/notebooks/seir.ipynb](src/notebooks/seir.ipynb)
-- [src](src/): it contains all the source codes (including the ones used to produce the plots in the paper) and is organized in three main parts:
+- [data](data/): The clean data used to produce the different plots presented in our paper.  The cleaned data are obtained by cleaning up the data generated from simulations. for more details please refer to the python notebook [here](data/clean_data.ipynb)
+- [docs] (docs): The files describing the algorithms and the dynamic of infection implemented.
+- [images](images/): The plots (in pdf) used in the paper and the Python notebook code is in: [src/notebooks/analytical.ipynb](src/notebooks/analytical.ipynb), [src/notebooks/bp.ipynb](src/notebooks/bp.ipynb) and [src/notebooks/seir.ipynb](src/notebooks/seir.ipynb)
+- [src](src/): The source codes (including the ones used to produce the plots in the paper) and is organized in three main parts:
       
     - The analytical results in  [src/analytic](src/analytic):
     
