@@ -1,15 +1,19 @@
-# EvoEpi
+# Evo-Epi = Evolution and epidemiology
+(@Author: [Nono Saha Cyrille Merleau](#) and [Matteo Smerlak](#) )
+
+
 In this repository we provide the code and the minimum documentation that accompany our publication.
 It provides an environment to simulate a simple branching process and SEIR epidemiological model including inhost branching process with bottleneck.
 ![](images/bp/illustration.png)
+
+***Figure 1:** Illustration of the branching proccess for a fragile and robust population. At each bottleneck, a new population is sampled from the last one and it uses as initial population for a new braching process*
+
 The repo is organised as follows: 
 - `data/` which contains all the clean data used to produce the different plots presented in our paper.  the clean data are obtained by cleaning up the data generated from simulations. for more details please refer to the python notebook `data/clean_data.ipynb`
 - `plots/` all the plot (in pdf) used in the paper and the Python notebook code is in `plots/bp_plot.ipynb` and `plots/seir_plot.ipynb`
 - `src/`: it contains all the source codes  
 
-# Installation and run
-
-## Requirement
+# Requirements
 The following softwares are required:
 
 
@@ -31,7 +35,7 @@ The installation was tested on the following operating systems:
 * MacOS Mojave 
 * Debian Xfce 4.12 
 
-## Run our code.
+# How to run the simulation.
 
 The code is organized in three main parts, all located in the folder `src/`
 - The analytical results in `src/analytic`:
