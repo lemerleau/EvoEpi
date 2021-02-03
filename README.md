@@ -6,7 +6,7 @@ In this repository, we provide the code and the minimum documentation that accom
 It provides an environment to simulate a simple branching process and SEIR epidemiological model including inhost branching process with bottleneck.
 ![](images/bp/illustration.png)
 
-***Figure 1:** Illustration of the branching proccess for a fragile and robust population. While the robust population looses its wild-type strains by cumulating deleterious mutations, the fragile one preserves them.  At each bottleneck, a new population is sampled from the last one and it uses as initial population for a new braching process*
+***Figure 1:** Illustration of the branching proccess for a fragile and robust population. While the robust population looses its wild-type strains by cumulating deleterious mutations, the fragile one preserves them.  At each bottleneck, a new population is sampled from the last one and it is used as initial population for a new braching process*
 
 The repo is organised as follows: 
 - [data](data/): The clean data used to produce the different plots presented in our paper.  The cleaned data are obtained by cleaning up the data generated from simulations. for more details please refer to the python notebook [here](data/clean_data.ipynb)
